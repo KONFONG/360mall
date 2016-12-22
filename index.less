@@ -1,0 +1,434 @@
+@charset "utf-8";
+/*---------------------------全局样式--------------------------------------*/
+*{    margin: 0;padding: 0;    }
+body{color: #666;    background: #F4F4F4;}
+li{display:inline-block;list-style: none;}
+a{text-decoration: none;}
+i,em,b,tt{font-style: normal;}
+
+/*吸底效果*/
+.fixDownBox{
+    width: 100%;
+    position: fixed;
+    z-index: 20;
+        background: #FFF;
+    bottom: -0.1rem;
+    border-top: 0.1rem solid #d0d0d0;
+}
+.goTop{
+    width:3rem;
+    height:3rem;
+    position: absolute;
+    right: 0rem;
+    bottom: 5rem;    
+    z-index: 22;
+    border-radius: 50%;
+//  background: rgba(0,0,0,.5);
+    img{
+        width: 100%;
+    }
+}
+.fixDownBox_ul{
+    width: 100%;
+    li{
+        width: 100%/4;
+         float: left;
+        background: #FFF;
+         border:none;
+         cursor: pointer;
+        img{
+            display: block;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+    li:before{
+        clear: both;
+    }
+    
+}
+/*结束：吸底效果*/
+/*---------------------------结束：全局样式----------------------------------*/
+
+/*-----页面头部-----*/
+header{
+    width: 100%;
+    height: 4.2rem;
+    display: block;
+    padding: 0.7rem;
+    background: #F5F5F5;
+    border-bottom: .1rem solid #DDD;
+    box-sizing: border-box;
+}
+.searchBox{
+   width:95% ;
+   outline: none;
+   height: 2.5rem;
+   font-size:1.6rem;
+   display: block;
+   margin: 0 auto;
+   border-radius: 0.5rem;
+   padding:0.1rem 0.5rem;
+}
+.bannerBox{
+    width: 100%;
+    background: #FFF;
+}
+.bannerBox img{
+    margin: 0;
+    width: 100%;
+    display: block;
+}
+.navBox{
+        background: #FFF;
+}
+.navBox ul{
+    width: 95%;
+    margin:0 auto;
+    padding: 1.5rem 0;
+    border-bottom: .1rem solid #EAEAEA;
+}
+.navBox ul li{
+    width: 20%;
+    cursor: pointer;
+    margin: 0 0.55rem;
+}
+.navBox ul li img{
+    width: 5rem;
+    display: block;
+    margin: 0 auto;
+}
+.navBox ul li span{
+    margin: 0.2rem auto;
+    display: block;
+    width: 4rem;
+}
+/*智能广告*/
+.navBox_advertisement{
+    width: 100%;
+    border-bottom: .1rem solid #EAEAEA;
+}
+.navBox_advertisement ul{display: inline-block;}
+.navBox_advertisement ul:nth-of-type(1){
+    border: none;
+    width:30%;
+}
+.navBox_advertisement ul:nth-of-type(1) img{
+    height: 1.6rem;
+    width: 6.3rem;
+    margin: 0 1.5rem;
+    padding-right: 1rem;
+    border-right: 0.1em solid #e1e1e1;
+}
+.navBox_advertisement ul:nth-of-type(2){
+        width: 65%;
+    border: none;
+    overflow: hidden;
+    height: 0rem;
+}
+ul.navBox_advBox{
+    
+}
+ul.navBox_advBox li{
+    width: 100%;
+}
+ul.navBox_advBox li span{
+    margin: 0;
+    width: 2rem;
+    color: #f66;
+    display: inline-block;
+}
+/*结束：智能广告*/
+
+/*掌上抢区域*/
+.buyOnHand{
+    width: 100%;
+    background: #FFF;
+    margin-top: 1.0rem;
+}
+.buyOnHand_title{
+    padding: 1.4rem 1.9rem;
+    border-bottom:.1rem solid #EAEAEA;
+    a{
+        float: right;
+        color: #222;
+        font-size: 1.4rem;
+    }
+    span{
+        display: inline-block;
+        color: #f55;
+        font-size: 1.5rem;
+    }
+    .buyOnHand_timmer{
+        display: inline-block;
+        i{
+            width: 1.2rem;
+            height: 1.2rem;
+            text-align: center;
+            line-height: 1.2rem;
+            display: inline-block;
+            border: 0.01rem solid #000;
+            margin: 0 0.05rem;
+            padding: 0.2rem;
+        }
+        em{
+             font-weight: 900;
+            color: #000;
+            font-family: fantasy;
+        }
+    }
+}
+/*结束：掌上抢区域*/
+
+/*产品罗列区域*/
+.buyOnHand_goods{
+    li{
+        width:32%;
+        background: #FFF;
+    }
+    img{
+        height: 9.5rem;
+        width: 9.5rem;
+        display: block;
+    }
+    span{
+         overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        margin: 0 0.5rem;
+    }
+            i{
+                color: #F66;
+                font-size: 1.4rem;
+                width: 45%;
+                margin:1.5rem;
+                    em{
+                        width: 35%;
+                        margin: 0 auto;
+                        color: #666;
+                        font-size: 0.9rem;
+                        text-decoration: line-through;
+                    }
+            }
+}
+    div.buyOnHand_goods div div li div.buyonhand_price{
+            margin: 0.8rem;
+    }   
+/*结束：产品罗列区域*/
+/*-----结束：页面头部-----*/
+
+/*楼层2*/
+.floor{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.1rem solid transparent;
+    .floorBox{
+        text-align: center;
+        margin: 1rem auto; 
+    }
+}
+/*结束：楼层2*/
+
+/*---------------------------页面中部-------------------------*/
+.detailBox:nth-of-type(odd){
+    border-right: .1rem solid #F1F1F1;
+}
+.detailBox{
+    width:39%;
+    float: left;
+    margin: 0;
+    padding:5%;
+    border-bottom: .1rem solid #F1F1F1;
+    span{
+        border: 0.1rem solid #E1E1E1;
+        border-radius: 1.1rem;
+        padding: 0.7rem;
+        margin: 0 auto;
+        display: block;
+        width: 70%;
+        vertical-align: middle;
+        img{
+            height: 1.5rem;
+            overflow: hidden;
+            width: 1.5rem;
+            vertical-align: middle;
+        }
+    }
+    .detailBox_goods{
+        text-align: center;
+        img{
+            width: 100%;
+            margin: 0.8rem 0;
+        }
+        i{
+            display: block;
+             color: #555;
+            font-size: 1.5rem;
+            height: 1.6rem;
+            line-height: 1.6rem;
+            margin: .7rem .8rem 0;
+        }
+        em{
+            display: block;
+            color: #F55;
+            font-weight: bold;
+            font-size: 1.5rem;
+            height: 1.6rem;
+            line-height: 1.6rem;
+            margin: .7rem 0 0;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    } 
+}
+.detailBox:before{
+    clear: both;
+}
+.detailBox_goods:before{
+    clear: both;
+}
+div.detailBox_goods em.new_priec i.ex_priec{
+        display: inline-block;
+        margin: 0;
+        color: #AAA;
+        font-size: 0.5rem;
+        font-weight: 400;
+        text-decoration: line-through;
+}
+div.detailBox_goods em.new_priec{
+    tt{
+        background: #f55;
+        color: #FFF;
+        display: inline-block;
+        width: 4.5rem;
+        height: 5rem;
+    }
+}
+
+/*新品上市*/
+.newGoods{
+    width: 100%;
+}
+.newGoodsBox{
+    position: relative;
+    background: #fff;
+    margin: 0.5rem 0;
+    img{
+        width: 100%;
+    }
+}
+div.newGoodsBox_floatbox{
+    width: 8rem;
+    height: 3.5rem;
+    border-radius: 2rem 0rem 0rem 2rem;
+    position: absolute;
+    right: 0rem;
+    top: 10rem;
+    background: #444;
+    opacity: 0.8;
+    color: #FFF;
+    line-height: 3.8rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+div.newGoods div.newGoodsBox div h3{
+    color: #999;
+    font-size: 1.2rem;
+    height: 1rem;
+    width: 80% !important;
+    margin: 0 auto;
+    margin-top: .6rem;
+}
+div.newGoods div.newGoodsBox div p.newGoodsBox_text{
+           color: #999;
+            font-size: 1.2rem;
+            height: 1.5rem;
+            width: 80% !important;
+            line-height: 1.5rem;
+            margin: 0 auto;
+            margin-top: .6rem;
+            overflow: hidden;
+            padding-bottom: 1.4rem;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+}
+
+/*结束：新品上市*/
+
+/*<!--手机及配件区域-->*/
+.topTitleBox{
+    img{
+        width: 100%;
+    }
+}
+/*<!--结束：手机及配件区域-->*/
+
+/*---------------------结束：页面中部-------------------------*/
+
+/*---------------------------页面底部-------------------------*/
+
+/*底部信息栏*/
+.theBottomMeunBox{
+    width: 100%;
+    background: #fff;
+    div{
+        width: 100%;    
+        border-top:.1rem solid #D6D6D6;
+    }
+}
+.help_contents{
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+        ul{
+                width:100%;
+        }
+}
+li.helpContentsBox_li{
+    width:33%;
+    float: left;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto;
+    border-right:.1rem solid #D6D6D6;
+    background: #fff;
+        i{
+                border: .1rem solid #AAA;
+                border-radius: 5.0rem;
+                color: #666;
+                display: block;
+                font-size: 1.2rem;
+                height: 3.1rem;
+                line-height: 3.1rem;
+                margin: 0 auto;
+                width: 3.1rem;
+                }
+                em{
+                    display: block;
+                    height: 1.2rem;
+                    line-height: 1.2rem;
+                    margin-top: .7rem;
+                }
+}
+li.helpContentsBox_li:before{clear: both;}
+.help_phoneNumber{
+    margin-top:5rem;
+     border-top: solid .1rem #D6D6D6;
+     font-size: 1.0rem;
+     line-height: 2rem;
+     text-align: center;
+}   
+/*结束：底部信息栏*/
+
+/*底部占位框*/
+.downBox{
+     width: 100%;
+     height: 5rem;
+     background:#f4f4f4;
+}
+/*结束：底部占位框*/
+/*---------------------结束：页面底部-----------------------*/

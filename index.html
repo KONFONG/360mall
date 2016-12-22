@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta name="format-detection" content="telephone=no">
+		<title>仿360网站</title>
+		<!--外引css文件-->
+		<link href="index.css" rel="stylesheet" />
+		<link rel="stylesheet" href="swiper-3.4.0.min.css" />
+		<!--外引js文件-->
+		<script type="text/javascript" src="swiper-3.4.0.min.js" ></script>
+		<script src="index.js"></script>
+		<script src="index_swiper.js"></script>
+	</head>
+	<body>
+		<!--吸底效果-->
+		<div class="fixDownBox">
+			<ul class="fixDownBox_ul">
+				<li>
+					<img src="img/fixedDownBox_home.png" />
+				</li>
+				
+				<li>
+					<img src="img/fixedDownBox_search.png" />
+				</li>
+				
+				<li>
+					<img src="img/fixedDownBox_shopCar.png" />
+				</li>
+				
+				<li>
+					<img src="img/fixedDownBox_person.png" />
+				</li>
+			</ul>
+			
+			<!--回到顶部-->
+			<div class="goTop">
+				<img src="img/goTop.png" id="gotop"/>
+			</div>
+			<!--结束：回到顶部-->
+			
+		</div>
+		<!--结束：吸底效果-->
+		
+		<!--顶部搜索栏-->
+	    <header>
+			<input type="text" class="searchBox" value="" placeholder="搜索商品"/>
+		</header>
+		<!--顶部搜索栏-->
+		
+		<!--轮播图区域-->
+		<div class="bannerBox">
+			<!--轮播图-->
+			<div class="swiper-container banner_carBox">
+				<div class="swiper-wrapper">
+					 <div class="swiper-slide"><img data-swiper-parallax="-100" src="img/banner01.webp"/></div>
+					 <div class="swiper-slide"><img data-swiper-parallax="-100" src="img/banner02.webp"/></div>
+					 <div class="swiper-slide"><img data-swiper-parallax="-100" src="img/banner03.webp"/></div>
+					 <div class="swiper-slide"><img data-swiper-parallax="-100" src="img/banner04.webp"/></div>
+					 <div class="swiper-slide"><img data-swiper-parallax="-100" src="img/banner05.webp"/></div>
+					 <div class="swiper-slide"><img data-swiper-parallax="-100" src="img/1 (1).jpg"/></div>
+				</div>
+				 <!-- 如果需要分页器-->
+			    <div class="swiper-pagination"></div>
+			</div>
+			<!--结束：轮播图-->
+			
+			<!--轮播图下方图片-->
+			<img src="img/banner_bottom.jpg" />	
+			<!--结束：轮播图下方图片-->
+		</div>
+		<!--轮播图区域-->
+		
+		<!--四小图标菜单栏-->
+		<div class="navBox">
+			<ul>
+				<li>
+					<img src="img/360手机.png" />
+					<span>360手机</span>
+				</li>
+				
+				<li>
+					<img src="img/一元夺宝.png" />
+					<span>一元夺宝</span>
+				</li>
+				
+				<li>
+					<img src="img/智品牌.png" />
+					<span>智品牌</span>
+				</li>
+				
+				<li>
+					<img src="img/社区.png" />
+					<span>&nbsp;社区</span>
+				</li>
+			</ul>
+		
+			<!--智能广告-->
+			<div class="navBox_advertisement">
+				<ul>
+					<li>
+						<img src="img/zhinengtoutiao.jpg"  />
+					</li>
+				</ul>
+				
+				<ul class="navBox_advBox">
+					<div class="swiper-container  nav_advBox">
+					  <div class="swiper-wrapper">
+					    <div class="swiper-slide">
+							<li>
+								<span>最新</span>
+								<i>360商城APP首次登陆送188元现金券！</i>
+							</li>
+					    </div>
+					    
+					    <div class="swiper-slide">
+					    	<li>
+								<span>1元</span>
+								<i>一元赢取千元手机！大奖等你拿！</i>
+							</li>
+					    </div>
+					    	
+					    <div class="swiper-slide">
+					    	<li>
+								<span>HOT</span>
+								<i>360手机N4S骁龙版，火爆预约中！！</i>
+							</li>
+					    </div>
+					    
+					    <div class="swiper-slide">
+					    	<li>
+								<span>优惠</span>
+								<i>一元赢取千元手机！大奖等你拿</i>
+							</li>
+					    </div>
+					    
+					  </div>
+					</div>
+				</ul>
+			</div>
+			<!--结束：智能广告-->
+			
+		</div>
+		<!--结束：四小图标菜单栏-->
+		
+		<!--一楼-掌上抢区域-->
+		<div class="buyOnHand">
+			<!--导航标题部分-->
+			<div class="buyOnHand_title">
+				<span>掌上抢</span>
+				<div class="buyOnHand_timmer">
+					距结束：
+					<i id="timer_h">**</i>
+					<em>:</em>
+					<i id="timer_i">**</i>
+					<em>:</em>
+					<i id="timer_s">**</i>
+				</div>
+				<a>惊爆特价限时抢 ></a>
+			</div>
+			<!--结束：导航标题部分-->
+		
+			<!--产品罗列区域-->
+			<div class="buyOnHand_goods">
+				<ul>
+					<div class="swiper-container  buyOnHand_goodsBox">
+						<div class="swiper-wrapper">
+							 <div class="swiper-slide">
+					 			<li>
+									<img src="img/buyonhand_box01.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						 
+						 		<li>
+									<img src="img/buyonhand_box02.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						  
+						  		<li>
+									<img src="img/buyonhand_box03.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						    </div>
+							 
+							<div class="swiper-slide">
+					 			<li>
+									<img src="img/buyonhand_box01.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						 
+						 		<li>
+									<img src="img/buyonhand_box02.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						  
+						  		<li>
+									<img src="img/buyonhand_box03.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						    </div>
+					
+							  <div class="swiper-slide">
+					 			<li>
+									<img src="img/buyonhand_box01.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						 
+						 		<li>
+									<img src="img/buyonhand_box02.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						  
+						  		<li>
+									<img src="img/buyonhand_box03.png" />
+									<span>360手机N4全网通阳光白（现货开放购买）</span>
+									<div class="buyonhand_price">
+										<i>￥949
+											<em>￥949</em>
+										</i>
+									</div>
+								</li>
+						    </div>
+							 
+						</div>
+					</div>
+				</ul>
+			</div>
+			<!--结束：产品罗列区域-->
+		</div>
+		<!--结束：一楼-掌上抢区域-->
+	
+		<!--二楼楼层-商品列表-->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>明星单品</em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：二楼楼层-商品列表-->
+	
+		<!--商品列表-->
+		<div class="goodsdetail" style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+		<!--结束：商品列表-->
+	
+	 	<!--三楼楼层-新品上市-->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em> 新品上市 </em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：三楼楼层-新品上市-->
+	
+	    <!--新品上市-->
+	    <div class="newGoods">
+	    	<!--新品1-->
+	    	<div class="newGoodsBox">
+	    		<img src="img/newGoodsBox01.webp" />
+	    		<div class="newGoodsBox_floatbox">￥899</div>
+	    		<div>
+		    		<h3>360手机N4A全网通流光金</h3>
+		    		<p class="newGoodsBox_text">4000mAh大电池 3G+32GB大内存 360OS 2.0 涡轮闪充 1300万摄像头 指纹智键</p>
+	    		</div>
+	    	</div>
+	    	<!--结束：新品1-->
+	    	
+	    	<!--新品2-->
+	    	<div class="newGoodsBox">
+	    		<img src="img/newGoodsBox02.webp" />
+	    		<div class="newGoodsBox_floatbox">￥159</div>
+	    		<div>
+		    		<h3>O2+车载空气净化器DM2</h3>
+		    		<p class="newGoodsBox_text">4重过滤 360°持续净化 专业对抗废气 为自由呼吸而生</p>
+	    		</div>
+	    	</div>
+	    	<!--结束：新品2-->
+	    	
+	    	<!--新品3-->
+	    	<div class="newGoodsBox">
+	    		<img src="img/newGoodsBox03.webp" />
+	    		<div class="newGoodsBox_floatbox">￥159</div>
+	    		<div>
+		    		<h3>小猫智能管家</h3>
+		    		<p class="newGoodsBox_text">插座上的智能生活，随时随地掌握一切，生活中的细节，才是你对生活品质的追求</p>
+	    		</div>
+	    	</div>
+	    	<!--结束：新品3-->
+	    	
+	    	<!--新品4-->
+	    	<div class="newGoodsBox">
+	    		<img src="img/newGoodsBox04.webp" />
+	    		<div class="newGoodsBox_floatbox">￥699</div>
+	    		<div>
+		    		<h3>Misfit-Ray 智能手环 (玫瑰金)</h3>
+		    		<p class="newGoodsBox_text">彩色LED 无需充电 50米防水 运动睡眠监测 音乐控制 自拍控制</p>
+	    		</div>
+	    	</div>
+	    	<!--结束：新品4-->
+	    	
+	    </div>
+	    <!--结束：新品上市-->
+	    
+	    <!--四楼楼层-手机及配件-->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em> 手机及配件 </em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：四楼楼层-手机及配件-->
+	
+		<!--手机及配件区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/shoujijipeijian01.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束：手机及配件区域-->
+		
+	    <!--五楼楼层- 智能家居 -->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>  智能家居  </em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：五楼楼层- 智能家居 -->
+	
+		<!--智能家居区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/zhinengjiaj_title.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束：智能家居区域-->
+		
+	    <!--六楼楼层-  智能车品  -->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>   智能车品   </em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：六楼楼层-  智能车品  -->
+	
+		<!--智能家居区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/zhinengchepin_title.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束：智能家居区域-->
+			
+	    <!--七楼楼层-  智能穿戴  -->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>   智能穿戴   </em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：七楼楼层-  智能穿戴  -->
+	
+		<!--智能穿戴区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/zhinengchuandai_title.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束：智能穿戴区域-->
+		
+	    <!--八楼楼层-  影音娱乐  -->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>   影音娱乐   </em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：八楼楼层-  影音娱乐  -->
+	
+		<!--影音娱乐区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/yingyinyule_title.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束：影音娱乐区域-->
+		
+	    <!--九楼楼层- 电脑/游戏   -->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>电脑/游戏 </em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：九楼楼层-  电脑/游戏   -->
+	
+		<!--电脑/游戏-区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/diannaoyouxi_title.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束：电脑/游戏-区域-->
+	
+	    <!--十楼楼层- 无人机/机器人     -->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>无人机/机器人</em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：十楼楼层-  电脑/游戏   -->
+	
+		<!--无人机/机器人  -区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/jiqiren_title.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束：无人机/机器人  -区域-->
+	
+       <!--十一楼楼层-  母婴玩具-->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>  母婴玩具</em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：十一楼楼层- 母婴玩具 -->
+	
+		<!-- 母婴玩具-区域-->
+	<div class="phonesBox">
+		<div class="topTitleBox"><img src="img/muyingwanju_title.webp"/></div>
+		
+		<div class="goodsdetail " style="background-color: #FFF">
+			<!--商品1-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>5000mAh大电池</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods01.webp" />
+					<i>360手机N4S</i>
+					<em>￥1199</em>
+				</div>
+			</div>
+			<!--结束：商品1-->
+			
+			<!--商品2-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em> 聊 天 问 答</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods02.webp" />
+					<i>360儿童机器人</i>
+					<em class="new_priec">￥1299
+						<i class="ex_priec">￥1499</i>
+						<tt>掌上抢</tt>
+					</em>
+				</div>
+					
+			</div>
+			<!--结束：商品2-->
+			
+			<!--商品3-->
+			<div class="detailBox">
+				<span>
+					<img src="img/detailBox_icon02.png" />
+					<em>五防保护</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods03.webp" />
+					<i>DM 手机U盘 64G</i>
+					<em class="new_priec">￥129
+						<i class="ex_priec">￥139</i>
+						<tt>直降</tt>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品3-->
+			
+			<!--商品4-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>高效四层滤网</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods04.webp" />
+					<i>原森态送风式口罩</i>
+					<em>￥298</em>
+				</div>
+			</div>
+			<!--结束：商品4-->
+			
+			<!--商品5-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>陶瓷表圈</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods05.webp" />
+					<i>AMAZFIT华米手表</i>
+					<em class="new_priec">￥769
+						<i class="ex_priec">￥799</i>
+					</em>
+				</div>
+			</div>
+			<!--结束：商品5-->
+			
+			<!--商品6-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>红外遥控</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods06.webp" />
+					<i>KK-Mini智能微插</i>
+					<em class="new_priec">￥79</em>
+				</div>
+			</div>
+			<!--结束：商品6-->
+			
+			<!--商品7-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>装进袋的影院</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods07.webp" />
+					<i>PaPa口袋影院</i>
+					<em class="new_priec">￥1279</em>
+				</div>
+			</div>
+			<!--结束：商品7-->
+			
+			<!--商品8-->
+			<div class="detailBox">
+					<span>
+					<img src="img/detailBox_icon01.png" />
+					<em>眼部放松</em>
+				</span>
+			
+				<div class="detailBox_goods">
+					<img src="img/detailBox_goods08.webp" />
+					<i>倍轻松眼部按摩器</i>
+					<em class="new_priec">￥429</em>
+				</div>
+			</div>
+			<!--结束：商品8-->
+			
+			<div style="clear: both;"></div>
+		</div>
+	</div>	
+		<!--结束： 母婴玩具-区域-->
+
+      <!--最底层-更多-->
+		<div class="floor">
+			<div class="floorBox">
+				<i>—</i>
+				<em>点击查看更多商品>></em>
+				<i>—</i>
+			</div>
+		</div>
+		<!--结束：最底层-更多-->
+	
+		<!--底部信息栏-->
+		<div class="theBottomMeunBox">
+			<div class="help_contents">
+				<ul>
+					<li class="helpContentsBox_li">
+						<i>7</i>
+						<em>7天无理由退货</em>
+					</li>
+					
+					<li class="helpContentsBox_li">
+						<i>15</i>
+						<em>15天免费换货</em>
+					</li>
+					
+					<li class="helpContentsBox_li" style="border: none;">
+						<i>包</i>
+						<em>满99元包邮</em>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="help_phoneNumber">
+				<p>客服热线：400-6822-360  周一到周日 9:00-18:00</p>
+				<p>360商城©2013-2016 版权所有</p>
+			</div>
+		</div>
+		<!--结束：底部信息栏-->
+	
+	  <!--底部占位框-->
+	  <div class="downBox"></div>
+	  <!--结束：底部占位框-->
+	</body>
+</html>      
